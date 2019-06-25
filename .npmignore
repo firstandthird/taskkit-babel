@@ -1,0 +1,10 @@
+example
+node_modules
+example/dist.js
+example/dist.js.map
+test/output/*.js
+test/output/*.js.map
+.idea/
+.DS_Store
+.editorconfig
+.travis.yml
