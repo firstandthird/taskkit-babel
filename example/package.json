@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "taskkit"
+  },
+  "devDependencies": {
+    "@firstandthird/complete": "^2.0.0",
+    "domassist": "^2.1.0",
+    "domodule": "^6.0.0",
+    "codemirror": "^5.48.0"
+  },
+  "dependencies": {
+    "taskkit": "^3.2.1"
+  }
+}

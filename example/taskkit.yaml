@@ -1,0 +1,14 @@
+tasks:
+  scripts: '{{CWD}}/../index.js'
+  default:
+    - 'scripts'
+scripts:
+  sourcemaps: true
+  minify: false
+  formats:
+    esm: true
+    cjs: false
+  commonjs:
+    enabled: true
+  files:
+    'dist.js': 'index.js'
