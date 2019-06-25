@@ -9,6 +9,6 @@ scripts:
     esm: true
     cjs: false
   commonjs:
-    enabled: true
+    enabled: false
   files:
     'dist.js': 'index.js'

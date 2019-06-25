@@ -46,12 +46,23 @@ class BabelTask extends TaskKitTask {
     this.options.builtins = this.options.builtins ? 'entry' : false;
     this.options.babel.sourceMaps = this.options.sourcemaps;
     this.options.babel.minified = this.options.minify;
-    const presetConfig = this.options.babel.presetConfig ? this.options.babel.presetConfig : { useBuiltIns: this.options.builtins, modules: false, corejs: 3 };
+
+    const presetConfig = {
+      useBuiltIns: this.options.builtins,
+      modules: false,
+      exclude: [
+        'transform-typeof-symbol'
+      ]
+    };
+
+    if (presetConfig.useBuiltIns) {
+      presetConfig.corejs = 3;
+    }
 
     this.options.babel.presets = [
       [
         '@babel/preset-env',
-        presetConfig
+        this.options.presetConfig || presetConfig
       ]
     ];
 
@@ -68,7 +79,7 @@ class BabelTask extends TaskKitTask {
         await writeFile(`${filename}.map`, JSON.stringify(map));
       }
     } catch (error) {
-      throw new Error('Error creating dist file');
+      throw error;
     }
   }
 }
