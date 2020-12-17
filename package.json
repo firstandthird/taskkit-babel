@@ -1,0 +1,41 @@
+{
+  "name": "taskkit-babel",
+  "version": "1.0.0",
+  "description": "TaskKit for Babel",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/taskkit-babel.git"
+  },
+  "keywords": [
+    "taskkit",
+    "build",
+    "babel"
+  ],
+  "author": "First+Third",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/taskkit-babel/issues"
+  },
+  "homepage": "https://github.com/firstandthird/taskkit-babel#readme",
+  "dependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "@babel/helper-module-imports": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "core-js": "^3.1.4",
+    "taskkit-task": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-firstandthird": "^4.3.0",
+    "eslint-plugin-import": "^2.18.0"
+  },
+  "eslintConfig": {
+    "extends": "firstandthird"
+  }
+}
